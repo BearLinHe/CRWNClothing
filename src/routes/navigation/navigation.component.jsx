@@ -25,12 +25,12 @@ const Navigation = () => {
           <CrwnLogo className="logo" />
         </LogoContainer>
         <NavLinks>
-          <NavLink to='/shop'>
-            SHOP
-          </NavLink>
+          <NavLink to='/shop'>SHOP</NavLink>
           {
-            currentUser ? 
-              (<NavLinks as='span' onClick={signOutUser}>SIGN OUT</NavLinks>) 
+            currentUser ? (
+              <NavLink as='span' onClick={signOutUser}>
+                SIGN OUT
+              </NavLink>) 
               : (<NavLink to='/auth'>SIGN IN</NavLink>)
           }
           <CartIcon />
